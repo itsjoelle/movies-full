@@ -1,0 +1,98 @@
+.outerContainer {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+
+    @media screen and (max-width: 799px) {
+      font-size: 1.9rem;
+    }
+  }
+}
+
+.cardslider-container {
+  gap: 1rem;
+  position: relative;
+  padding: 2rem 0;
+  height: 300px;
+
+  h1 {
+    margin: 20px 0 10px 50px;
+    font-size: 1.8rem;
+
+    @media screen and (max-width: 699px) {
+      margin: 10px 0 10px 30px;
+    }
+  }
+
+  .wrapper {
+    .slider {
+      width: max-content;
+      gap: 1rem;
+      transform: translateX(0px);
+      transition: 0.3s ease-in-out;
+      margin-left: 50px;
+    }
+
+    .slider-action {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      width: 50px;
+      transition: 0.3s ease-in-out;
+
+      svg {
+        font-size: 2rem;
+      }
+    }
+
+    .none {
+      display: none;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      right: 0;
+    }
+  }
+}
+
+.slick-next {
+  position: absolute !important;
+  top: 85px !important;
+
+  @media screen and (max-width: 1024px) {
+    display: none !important;
+  }
+}
+
+.slick-prev {
+  position: absolute !important;
+  top: 85px !important;
+  left: -35px !important;
+
+  @media screen and (max-width: 1024px) {
+    display: none !important;
+  }
+}
+
+.slick-next:before {
+  font-size: 40px !important;
+  content: '\276F' !important;
+}
+
+.slick-prev:before {
+  font-size: 40px !important;
+  content: '\276E' !important;
+}

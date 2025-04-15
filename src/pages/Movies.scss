@@ -1,0 +1,14 @@
+.container-movies {
+  .data {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .no-content {
+      text-align: center;
+      color: white;
+      margin-top: 4rem;
+    }
+  }
+}

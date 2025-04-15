@@ -1,0 +1,90 @@
+.reviews {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  &-container {
+    gap: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-none {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid #fd076994;
+  padding: 1rem;
+  width: 100%;
+
+  &-container {
+    display: flex;
+  }
+
+  &-card {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 300px;
+    width: 345px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    padding: 1rem;
+  }
+
+  &-card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+
+  &-card:hover ~ &-card {
+    position: relative;
+    left: 20px;
+    transition: 0.4s ease-out;
+  }
+
+  &-title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+
+  &-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &-author {
+    font-size: 1.4rem;
+  }
+
+  &-content {
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    line-height: 23px;
+    font-style: italic;
+    overflow: scroll;
+    padding-right: 20px;
+    scrollbar-width: none;
+  }
+
+  &-created {
+    font-size: 1.1rem;
+  }
+}

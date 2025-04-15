@@ -1,0 +1,9 @@
+.slidercustom-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  @media screen and (max-width: 700px) {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,130 @@
+.container-signup {
+  position: relative;
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+
+    .outerContainer {
+      width: 100vw;
+      padding: 0 1rem;
+    }
+
+    .header-small {
+      font-size: 2rem;
+    }
+
+    .body {
+      gap: 1rem;
+
+      .text {
+        text-align: center;
+        font-size: 2rem;
+
+        @media screen and (max-width: 499px) {
+          font-size: 1.8rem;
+        }
+
+        h1,
+        h4 {
+          font-size: 2rem;
+          @media screen and (max-width: 499px) {
+            font-size: 1.5rem;
+          }
+        }
+
+        h1 {
+          @media screen and (max-width: 499px) {
+            // max-width: 260px;
+          }
+        }
+
+        .header {
+          font-size: 2rem;
+        }
+
+        h6 {
+          font-size: 1rem;
+        }
+      }
+
+      .form {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &.show {
+          display: flex;
+          flex-direction: column;
+        }
+
+        @media screen and (max-width: 499px) {
+          max-width: 350px;
+        }
+
+        @media screen and (max-width: 699px) {
+          display: flex;
+          flex-direction: column;
+        }
+
+        input {
+          color: black;
+          border: none;
+          padding: 1.5rem;
+          font-size: 1.1rem;
+          border: 1px solid black;
+          height: 60px;
+          border-radius: 0.2rem;
+
+          &::placeholder {
+            top: 2px;
+            position: relative;
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          @media screen and (max-width: 499px) {
+            font-size: 1rem;
+            height: 50px;
+          }
+        }
+      }
+      .switch {
+        cursor: pointer;
+        font-size: 18px;
+        margin-top: 12px;
+      }
+    }
+
+    .signup-button {
+      width: 100%;
+      max-width: 400px;
+      padding: 1rem 1.5rem 0.8rem;
+      border: none;
+      border-radius: 0.2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      background-color: #6f3eeb;
+      background-color: #fd0769;
+      color: #fff;
+
+      @media screen and (max-width: 499px) {
+        max-width: 350px;
+      }
+
+      &:hover {
+        background-color: #bf1e5e;
+      }
+    }
+  }
+}

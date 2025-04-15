@@ -1,0 +1,59 @@
+.container-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+
+  .logo {
+    font-size: 6rem;
+    color: #c3195d;
+    letter-spacing: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+
+    @media screen and (max-width: 799px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 499px) {
+      font-size: 1.5rem;
+    }
+
+    span {
+      position: relative;
+      bottom: 10px;
+      left: 10px;
+    }
+
+    &.login {
+      font-size: 5rem;
+      top: 3rem;
+
+      @media screen and (max-width: 499px) {
+        font-size: 3.5rem;
+      }
+
+      span {
+        @media screen and (max-width: 499px) {
+          left: 5px;
+          bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .login-button {
+    padding: 0.5rem 1rem;
+    height: 40px;
+    width: 150px;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 0.2rem;
+    font-weight: 400;
+    font-size: 1.05rem;
+  }
+}
